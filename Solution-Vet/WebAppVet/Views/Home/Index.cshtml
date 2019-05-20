@@ -1,7 +1,13 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿    @model List<ClientPatientManagement.Core.Models.Room>
+    @{
+        ViewBag.Title = "Index";
+    }
 
-<h2>Index</h2>
+    <h2>Index</h2>
 
+
+
+    @foreach (var item in Model)
+    {
+    <span>nombre</span> <span>@item.Name</span>
+    }
