@@ -149,20 +149,17 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoomController.cs" />
     <Compile Include="Data\ClinicaDbContext.cs" />
+    <Compile Include="Data\RoomDataGateway.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Interface\IEntity.cs" />
     <Compile Include="Interface\IRepository.cs" />
-    <Compile Include="Migrations\201905140013211_Initial-create.cs" />
-    <Compile Include="Migrations\201905140013211_Initial-create.Designer.cs">
-      <DependentUpon>201905140013211_Initial-create.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905140017343_update-room.cs" />
-    <Compile Include="Migrations\201905140017343_update-room.Designer.cs">
-      <DependentUpon>201905140017343_update-room.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\Doctor.cs" />
+    <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -188,14 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Room\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905140013211_Initial-create.resx">
-      <DependentUpon>201905140013211_Initial-create.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905140017343_update-room.resx">
-      <DependentUpon>201905140017343_update-room.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

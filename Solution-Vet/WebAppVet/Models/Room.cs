@@ -10,4 +10,21 @@ namespace ClientPatientManagement.Core.Models
         public String Location { get; set; }
 
     }
+
+    [MetadataType(typeof(RoomMetadata))]
+    public class RoomMetadata
+        {
+            [key]
+            public int Id { get; set; }
+            [StringLength(50)]
+            public string Name { get; set; }
+            [StringLength(50)]
+            public string Location { get; set; }
+        }
+
+    
+
 }
+
+
+

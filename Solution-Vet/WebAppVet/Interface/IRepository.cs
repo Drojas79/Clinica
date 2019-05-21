@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ClientPatientManagement.Core.Interface
+namespace ClientPatientManagement.Core.Interfaces
 {
-    interface IRepository
+    public interface IRepository<TEntity> where TEntity : ClientPatientManagement.Core.Interface.IEntity
     {
-      
+        IEnumerable<TEntity> List();
+        TEntity GetById(int id);
+        void Insert(TEntity entity);
+        void Update(TEntity entity);
+        void Delete(int id);
     }
 }
